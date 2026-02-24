@@ -32,12 +32,12 @@ padding:15px;
 text-align:center;
 }
 
-.header img{
-width:130px;
+.logo{
+width:140px;
+margin-bottom:5px;
 }
 
 .title{
-margin-top:5px;
 font-size:18px;
 font-weight:bold;
 }
@@ -170,7 +170,8 @@ color:#aaa;
 
 <div class="header">
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Allianz_logo.svg/512px-Allianz_logo.svg.png">
+<img class="logo"
+src="https://www.allianz.com/etc.clientlibs/onemarketing/azcom/clientlibs/clientlib-site/resources/images/allianz-logo.svg">
 
 <div class="title">
 Валутен калкулатор на Алианц
@@ -282,15 +283,13 @@ to.appendChild(o2)
 
 }
 
-/* DEFAULT EUR → USD */
+/* DEFAULT EUR USD */
 
 from.value="EUR"
 to.value="USD"
 
 
 let rate=rates["USD"]
-
-/* BUY / SELL */
 
 document.getElementById("buy").innerHTML=
 (rate*0.995).toFixed(4)
@@ -372,6 +371,7 @@ result.toFixed(4)+" "+to
 }
 
 </script>
+
 
 </body>
 </html>
