@@ -4,374 +4,195 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Валутен калкулатор на Алианц</title>
-
 <style>
-
 body{
-background:#0f1724;
-font-family:Arial;
-display:flex;
-justify-content:center;
-margin-top:30px;
-color:white;
+  background:#0f1724;
+  font-family:Arial;
+  display:flex;
+  justify-content:center;
+  margin-top:30px;
+  color:white;
 }
-
 .box{
-width:380px;
-background:#1b2435;
-border-radius:14px;
-overflow:hidden;
-box-shadow:0 10px 30px rgba(0,0,0,0.6);
+  width:380px;
+  background:#1b2435;
+  border-radius:14px;
+  overflow:hidden;
+  box-shadow:0 10px 30px rgba(0,0,0,0.6);
 }
-
-/* HEADER */
-
 .header{
-background:#003781;
-padding:15px;
-text-align:center;
+  background:#003781;
+  padding:15px;
+  text-align:center;
 }
-
 .logo{
-width:140px;
-margin-bottom:5px;
+  width:140px;
+  margin-bottom:5px;
 }
-
 .title{
-font-size:18px;
-font-weight:bold;
+  font-size:18px;
+  font-weight:bold;
 }
-
-/* RATE PANEL */
-
-.rates{
-background:#24314a;
-padding:15px;
-text-align:center;
-border-bottom:1px solid #3a4a70;
-}
-
-.ratebox{
-display:flex;
-justify-content:space-between;
-margin-top:10px;
-}
-
-.buy,.sell{
-width:48%;
-background:#1b2435;
-padding:10px;
-border-radius:8px;
-}
-
-.buy b{
-color:#6bd16b;
-}
-
-.sell b{
-color:#ff7777;
-}
-
-/* CONTENT */
-
 .content{
-padding:20px;
+  padding:20px;
 }
-
 .display{
-width:100%;
-height:55px;
-font-size:26px;
-text-align:right;
-background:#0f1724;
-border:none;
-border-radius:8px;
-color:white;
-padding:10px;
-margin-bottom:10px;
+  width:100%;
+  height:55px;
+  font-size:26px;
+  text-align:right;
+  background:#0f1724;
+  border:none;
+  border-radius:8px;
+  color:white;
+  padding:10px;
+  margin-bottom:10px;
 }
-
 select{
-width:100%;
-padding:12px;
-margin-bottom:10px;
-background:#0f1724;
-color:white;
-border:none;
-border-radius:8px;
+  width:100%;
+  padding:12px;
+  margin-bottom:10px;
+  background:#0f1724;
+  color:white;
+  border:none;
+  border-radius:8px;
 }
-
 .convert{
-width:100%;
-padding:14px;
-background:#003781;
-color:white;
-font-size:18px;
-border:none;
-border-radius:8px;
+  width:100%;
+  padding:14px;
+  background:#003781;
+  color:white;
+  font-size:18px;
+  border:none;
+  border-radius:8px;
 }
-
 .result{
-text-align:center;
-margin-top:15px;
-font-size:22px;
-color:#4da3ff;
-font-weight:bold;
+  text-align:center;
+  margin-top:15px;
+  font-size:22px;
+  color:#4da3ff;
+  font-weight:bold;
 }
-
-/* KEYPAD */
-
 .buttons{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:10px;
-margin-top:20px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px;
+  margin-top:20px;
 }
-
 button{
-padding:18px;
-font-size:20px;
-background:#2a3650;
-border:none;
-border-radius:8px;
-color:white;
-cursor:pointer;
+  padding:18px;
+  font-size:20px;
+  background:#2a3650;
+  border:none;
+  border-radius:8px;
+  color:white;
+  cursor:pointer;
 }
-
 button:hover{
-background:#3a4a70;
+  background:#3a4a70;
 }
-
 .zero{
-grid-column:span 2;
+  grid-column:span 2;
 }
-
-/* FOOTER */
-
 .footer{
-background:#003781;
-padding:10px;
-text-align:center;
-font-size:12px;
+  background:#003781;
+  padding:10px;
+  text-align:center;
+  font-size:12px;
 }
-
 .status{
-font-size:12px;
-text-align:center;
-color:#aaa;
+  font-size:12px;
+  text-align:center;
+  color:#aaa;
+  margin-bottom:5px;
 }
-
 </style>
 </head>
-
 <body>
-
 <div class="box">
-
 <div class="header">
-
-<img class="logo"
-src="https://www.allianz.com/etc.clientlibs/onemarketing/azcom/clientlibs/clientlib-site/resources/images/allianz-logo.svg">
-
-<div class="title">
-Валутен калкулатор на Алианц
+<img class="logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABTklEQVR4nO3WsQnCQBBE0X7/77hONIWXW1RRV5n9duGZ3VEw/ycUJEgUAAAAAAAAAAAAAAADgNqZxNw25x5MF0l1Sx7p3+N1g3YI23ShLvk6R/kV0PZbH2eZ/cxeZV6Mfrz4XT2Tt70d87qX+z2tOjHq0o6/wu0/kdptfQuEJZXf0z6X4N2P2dr3T5dM9k5J9k6jTzvv3l3L0npP0P3PQ/jgFpaJX6d3jNfUBAAAAAAAAAAAAAAD+GvA9XAu9e6o3iAAAAAElFTkSuQmCC">
+<div class="title">Валутен калкулатор на Алианц</div>
 </div>
-
-</div>
-
-
-<div class="rates">
-
-EUR → USD
-
-<div class="ratebox">
-
-<div class="buy">
-Купува<br>
-<b id="buy">...</b> USD
-</div>
-
-<div class="sell">
-Продава<br>
-<b id="sell">...</b> USD
-</div>
-
-</div>
-
-</div>
-
 
 <div class="content">
-
-<div class="status" id="status">
-Зареждане на live курсове...
-</div>
-
+<div class="status" id="status">Зареждане на live курсове...</div>
 <input id="amount" class="display" value="1">
-
-
 <select id="from"></select>
-
 <select id="to"></select>
-
-
-<button class="convert" onclick="convert()">
-Конвертирай
-</button>
-
-
-<div id="result" class="result">
-0
-</div>
-
+<button class="convert" onclick="convert()">Конвертирай</button>
+<div id="result" class="result">0</div>
 
 <div class="buttons">
-
 <button onclick="num(7)">7</button>
 <button onclick="num(8)">8</button>
 <button onclick="clearDisplay()">C</button>
-
 <button onclick="num(4)">4</button>
 <button onclick="num(5)">5</button>
 <button onclick="num(6)">.</button>
-
 <button onclick="num(1)">1</button>
 <button onclick="num(2)">2</button>
 <button onclick="back()">←</button>
-
 <button class="zero" onclick="num(0)">0</button>
-
+</div>
 </div>
 
+<div class="footer">Allianz Exchange System</div>
 </div>
-
-<div class="footer">
-Allianz Exchange System
-</div>
-
-</div>
-
 
 <script>
-
 let rates={}
 
 async function load(){
+  try{
+    let res=await fetch("https://open.er-api.com/v6/latest/EUR")
+    let data=await res.json()
+    rates=data.rates
 
-try{
+    let from=document.getElementById("from")
+    let to=document.getElementById("to")
+    from.innerHTML=""
+    to.innerHTML=""
+    for(let c in rates){
+      let o1=document.createElement("option")
+      o1.value=c
+      o1.text=c
+      from.appendChild(o1)
+      let o2=document.createElement("option")
+      o2.value=c
+      o2.text=c
+      to.appendChild(o2)
+    }
 
-let res=await fetch("https://open.er-api.com/v6/latest/EUR")
+    from.value="EUR"
+    to.value="USD"
 
-let data=await res.json()
-
-rates=data.rates
-
-let from=document.getElementById("from")
-let to=document.getElementById("to")
-
-for(let c in rates){
-
-let o1=document.createElement("option")
-o1.value=c
-o1.text=c
-from.appendChild(o1)
-
-let o2=document.createElement("option")
-o2.value=c
-o2.text=c
-to.appendChild(o2)
-
+    document.getElementById("status").innerHTML="✓ Live курсове заредени"
+    convert()
+  }catch{
+    document.getElementById("status").innerHTML="❌ Няма връзка с API"
+  }
 }
 
-/* DEFAULT EUR USD */
-
-from.value="EUR"
-to.value="USD"
-
-
-let rate=rates["USD"]
-
-document.getElementById("buy").innerHTML=
-(rate*0.995).toFixed(4)
-
-document.getElementById("sell").innerHTML=
-(rate*1.005).toFixed(4)
-
-
-document.getElementById("status").innerHTML=
-"✓ Live курсове заредени"
-
-convert()
-
-}catch{
-
-document.getElementById("status").innerHTML=
-"❌ Няма връзка с API"
-
-}
-
-}
-
+// Автоматично обновяване на всеки 30 секунди
+setInterval(load, 30000)
 load()
 
-
 function num(n){
-
-let a=document.getElementById("amount")
-
-if(n=="."){
-if(!a.value.includes("."))
-a.value+="."
-return
+  let a=document.getElementById("amount")
+  if(n=="."){if(!a.value.includes("."))a.value+=".";return}
+  if(a.value=="0")a.value=n
+  else a.value+=n
 }
-
-if(a.value=="0")
-a.value=n
-else
-a.value+=n
-
-}
-
-
-function clearDisplay(){
-
-document.getElementById("amount").value="0"
-
-}
-
-
-function back(){
-
-let a=document.getElementById("amount")
-
-a.value=a.value.slice(0,-1)
-
-if(a.value=="")
-a.value="0"
-
-}
-
-
+function clearDisplay(){document.getElementById("amount").value="0"}
+function back(){let a=document.getElementById("amount");a.value=a.value.slice(0,-1);if(a.value=="")a.value="0"}
 function convert(){
-
-let amount=parseFloat(
-document.getElementById("amount").value
-)
-
-let from=document.getElementById("from").value
-
-let to=document.getElementById("to").value
-
-let result=(amount/rates[from])*rates[to]
-
-document.getElementById("result").innerHTML=
-amount+" "+from+" = "+
-result.toFixed(4)+" "+to
-
+  let amount=parseFloat(document.getElementById("amount").value)
+  let from=document.getElementById("from").value
+  let to=document.getElementById("to").value
+  let result=(amount/rates[from])*rates[to]
+  document.getElementById("result").innerHTML=amount+" "+from+" = "+result.toFixed(4)+" "+to
 }
-
 </script>
-
-
 </body>
 </html>
